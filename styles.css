@@ -1,9 +1,37 @@
-.background-image {
+@font-face {
+    font-family: 'tomkin-medium';
+    src: url('fonts/tomkin-medium.woff2');
+}
+@font-face {
+    font-family: 'tomkin-regular';
+    src:url('fonts/tomkin-regular.woff2');
+}
+
+/* .background-image {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px;
+} */
+body {
+    position: absolute;
+    background: url(graphics/money-heist.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-family:tomkin-medium, sans-serif;
+}
+.zodiac-heist-title {
+    font-size: 2rem;
+    text-align: center;
+}
+.zodiac-heist-sub-title {
+    text-align: center;
 }
 /* .rectangle {
     position: absolute;
@@ -45,3 +73,135 @@
     backdrop-filter: blur(3px);
     border-radius: 35px;
 }
+.zodiac-upper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.zodiac-upper-box{
+    margin: 25px;
+}
+.zodiac-upper-box-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 210px;
+    max-height: 220px;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+/* #aquarius-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 39px;
+    top: 430px;
+    border-radius: 35px;
+}
+#pisces-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 269px;
+    top: 430px;
+    border-radius: 35px;
+}
+#aries-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 499px;
+    top: 430px;
+    border-radius: 35px;
+}
+#taurus-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 729px;
+    top: 430px;
+    border-radius: 35px;
+}
+#gemini-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 959px;
+    top: 430px;
+    border-radius: 35px;
+}
+#cancer-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 1189px;
+    top: 430px;
+    border-radius: 35px;
+} */
+
+.zodiac-lower {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.zodiac-lower-box {
+    margin: 25px;
+}
+
+.zodiac-lower-box-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 210px;
+    max-height: 220px;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+/* #leo-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 39px;
+    top: 713px;
+    border-radius: 35px;
+}
+#virgo-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 269px;
+    top: 713px;
+    border-radius: 35px;
+}
+#libra-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 499px;
+    top: 713px;
+    border-radius: 35px;
+}
+#scorpio-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 729px;
+    top: 713px;
+    border-radius: 35px;
+}
+#sagittarius-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 959px;
+    top: 713px;
+    border-radius: 35px;
+}
+#capricorn-box-img {
+    position: absolute;
+    width: 210px;
+    height: 223px;
+    left: 1189px;
+    top: 713px;
+    border-radius: 35px;
+} */
