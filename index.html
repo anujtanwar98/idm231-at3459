@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-image">
-        <!-- <img class="background-image" src="graphics/money-heist.jpg" alt="background"> -->
+    <div class="wrapper">
+        <img class="background-image" src="graphics/money-heist.jpg" alt="background">
         <div class="rectangle">
             <div class="zodiac-heist-title">
                 <h1>Zodiac Heist</h1>
@@ -20,119 +20,92 @@
             </div>
             <section id="dob">
                 <div class="dob-text">
-                    <h3>Enter your Date of birth</h3>
+                    <h3>Enter your Date of birth</h3>  
+                    <!-- should i write date of heist instead of date of birth -->
                 </div>
+                <div class="dob-details">
+                    <p>Month:<input type="number" id="month" min="1" max="12" required> Day:<input type="number" id="day" min="1" max="31" required></p>
+                </div>
+                <button id="submit-button">
+                    UnMask your character
+                </button>
             </section>
             <section id="main-container">
-                <div class="zodiac-upper">
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Aquarius</h4>
-                        <p>January 20 - February 18</p>
-                    </div>
-                <div id="aquarius-sub-box"></div>    
-                <!-- </div>
-                <div class="zodiac-upper"> -->
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Pisces</h4>
-                        <p>February 19 - March 20</p>
-                    </div>
-                <div id="pisces-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-upper"> -->
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Aries</h4>
-                        <p>March 21 - April 19</p>
-                    </div>
-                <div id="aries-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-upper"> -->
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Taurus</h4>
-                        <p>April 20 - May 20</p>
-                    </div>
-                <div id="taurus-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-upper"> -->
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Gemini</h4>
-                        <p>May 21 - June 20</p>
-                    </div>
-                <div id="gemini-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-upper"> -->
-                    <div class="zodiac-upper-box">
-                        <img class="zodiac-upper-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Cancer</h4>
-                        <p>June 21 - July 22</p>
-                    </div>
-                <div id="cancer-sub-box"></div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Aquarius</h4>
+                    <p>January 20 - February 18</p>
                 </div>
-                <div class="zodiac-lower">
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Leo</h4>
-                        <p>July 23 - August 22</p>
-                    </div>
-                <div id="leo-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-lower"> -->
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Virgo</h4>
-                        <p>August 23 - September 22</p>
-                    </div>
-                <div id="virgo-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-lower"> -->
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Libra</h4>
-                        <p>September 23 - October 22</p>
-                    </div>
-                <div id="libra-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-lower"> -->
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Scorpio</h4>
-                        <p>October 23 - November 21</p>
-                    </div>
-                <div id="scorpio-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-lower"> -->
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Sagittarius</h4>
-                        <p>November 22 - December 21</p>
-                    </div>
-                <div id="sagittarius-sub-box"></div>
-                <!-- </div>
-                <div class="zodiac-lower"> -->
-                    <div class="zodiac-lower-box">
-                        <img class="zodiac-lower-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Capricorn</h4>
-                        <p>December 22 - January 19</p>
-                    </div>
-                <div id="capricorn-sub-box"></div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Pisces</h4>
+                    <p>February 19 - March 20</p>
                 </div>
-                <!-- <div class="zodiac">
-                    <div id="capricorn-box">
-                        <img id="capricorn-box-img" src="graphics/mask.jpg" alt="mask-person">
-                        <h4>Capricorn</h4>
-                        <p>December 22 - January 19</p>
-                    </div>
-                <div id="capricorn-sub-box"></div>
-                </div> -->
-
-                <!-- <div class="zodiac" id="capricorn-box">
-                    <img id="capricorn-sub-box" src="graphics/mask.jpg" alt="mask-person">
-                </div> -->
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Aries</h4>
+                    <p>March 21 - April 19</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Taurus</h4>
+                    <p>April 20 - May 20</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Gemini</h4>
+                    <p>May 21 - June 20</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Cancer</h4>
+                    <p>June 21 - July 22</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Leo</h4>
+                    <p>July 23 - August 22</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Virgo</h4>
+                    <p>August 23 - September 22</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Libra</h4>
+                    <p>September 23 - October 22</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Scorpio</h4>
+                    <p>October 23 - November 21</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Sagittarius</h4>
+                    <p>November 22 - December 21</p>
+                </div>
+                <div class="zodiac-box">
+                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="mask-person">
+                    <h4>Capricorn</h4>
+                    <p>December 22 - January 19</p>
+                </div>
             </section>
+        </div>
+        <div class="modals">
+            <div id="aquarius-sub-box"></div>
+            <div id="pisces-sub-box"></div>
+            <div id="aries-sub-box"></div>
+            <div id="taurus-sub-box"></div>
+            <div id="gemini-sub-box"></div>
+            <div id="cancer-sub-box"></div>
+            <div id="leo-sub-box"></div>
+            <div id="virgo-sub-box"></div>
+            <div id="libra-sub-box"></div>
+            <div id="scorpio-sub-box"></div>
+            <div id="sagittarius-sub-box"></div>
+            <div id="capricorn-sub-box"></div>
         </div>
     </div>
 </body>
