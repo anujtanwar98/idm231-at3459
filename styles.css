@@ -24,73 +24,139 @@
     padding: 25px;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #fff;
     font-family:tomkin-medium, sans-serif;
 }
 p {
-    color: #fff;
     font-family:tomkin-regular, sans-serif;
 }
 .zodiac-heist-title {
     font-size: 2rem;
     text-align: center;
+    color: red;
+    padding: 10px;
+    margin: 5px;
 }
 .zodiac-heist-sub-title {
     text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
 }
 .dob-text {
     font-size: 1.25rem;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
 }
 .dob-details {
     font-family:tomkin-regular, sans-serif;
     color: #fff;
     border-radius: 20px;
     font-size: 1.25rem;
+	text-align: center;
+}
+.dob-details p {
+    font-size: 1.5rem;
 }
 #submit-button {
     font-family:tomkin-regular, sans-serif;
-    text-align: center;
-    color: red;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     border: none;
     font-size: 1.25rem;
-    cursor: pointer;
+    padding: 1rem;
+    margin: 3px;
+    border: 3px solid red;
 }
 #submit-button:hover {
-    color: black;
+    color: red;
+    border: 4px solid red;
     font-family:tomkin-medium, sans-serif;
+    cursor: pointer;
 }
+
 /* .rectangle {
     width: 100%;
     background: rgba(196, 196, 196, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-} */
-
-/* .rectangle {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    mix-blend-mode: soft-light;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
     border-radius: 35px;
 } */
 
 .rectangle {
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
     border-radius: 35px;
 }
 .zodiac-box-img {
     width: 100%;
+    border-radius: 20px;
+    border: 3px solid red;
 }
 #main-container {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 .zodiac-box {
+    /* either use 180px or 240px */
     max-width: 180px;
-    margin: 25px;
+    /* max-width: 180px; */
+    margin: 30px;
+    color: #fff;
+    text-align: center;
 }
+
+.input {
+    color: #fff;
+    font-family:tomkin-regular, sans-serif;
+    font-size: 1.25rem;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid red;
+    text-align: center;
+}
+#modals {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.zodiac-sub-box {
+    max-width: 400px;
+    color: #fff;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+}
+.sign-image {
+    width: 100%;
+    text-align: center;
+}
+.sign-name {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+/* .person-bio {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+	padding: 10px;
+	position: relative;
+} */
+
