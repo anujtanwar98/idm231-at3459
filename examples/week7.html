@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <form action="">
+        <label for="billTotal">Bill Total</label>
+        <input id="billTotal" class="js-bill-total" value="0.00" type="number">
+        <br>
+        <label for="percentage">Percentage</label>
+        <input id="percentage" class="js-percentage-total" value="15" type="number">
+        <button class="js-submit-button">Submit</button>
+    </form>
+    <div class="js-total-wrapper" style="display: block;">
+        <h2>Your Total:$ <span class="js-your-total">0.00</span></h2>
+        <P>You should Tip <span class="js-should-tip">$0.00</span></P>
+        <P>Grand Total <span class="js-grand-total">$0.00</span></P>
+    </div>
+    <script>
+        const submitButton = document.querySelector('.js-submit-button')
+
+        submitButton.addEventListener ('click', function(event) {
+        // this will prevent the default behaviour of submit button
+        event.preventDefault()
+
+        // get value of total
+        const inputTotal = document.querySelector('.js-bill-total').value
+
+        // get percentage amount
+        const inputPercentage = document.querySelector('.js-percentage-total').value
+
+        const yourTotal = document.querySelector('.js-your-total')
+
+        const tipTotal = document.querySelector('.js-should-tip')
+
+        const grandTotal = document.querySelector('.js-grand-total')
+        
+        //calculate tip math
+        // (20/100)*150
+
+        const tipAmount= (inputPercentage / 100) * inputTotal
+        console.log(tipAmount)
+
+        // make sure 2 decimals places
+        const formattedTipAmount = tipAmount.toFixed(2);
+        // console.log(formattedTipAmount)
+
+        //update values on screen 
+        
+        yourTotal.innerHTML = inputTotal
+        tipTotal.innerHTML = formattedTipAmount
+        grandTotal.innerHTML = parseFloat(inputTotal) + parseFloat(formattedTipAmount)
+
+        const grandTotalText = parseFloat(inputTotal) + parseFloat(formattedTipAmount);
+
+        const formattedGrandTotal = grandTotalText.toFixed(2)
+
+        grandTotal.innerHTML = formattedGrandTotal
+        
+        })
+    </script>
+</body>
+</html>
