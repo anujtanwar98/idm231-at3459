@@ -145,7 +145,8 @@ p {
     justify-content: center;
     position: fixed;
 } */
-.zodiac-sub-box {
+
+/* .zodiac-sub-box {
     display: none;
     max-width: 400px;
     color: #fff;
@@ -168,7 +169,8 @@ p {
     font-family: tomkin-medium, sans-serif;
     text-align: center;
     padding: 10px
-}
+} */
+
 /* .person-bio {
     font-family: tomkin-regular, sans-serif;
     font-size: 1rem;
@@ -177,3 +179,254 @@ p {
 	position: relative;
 } */
 
+/* this is zodiac cards */
+
+.zodiac-sub-box {
+    display: none;
+    max-width: 400px;
+    color: #fff;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    border: 3px solid red;
+}
+.sign-image-aquarius {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-aquarius {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-aquarius {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-aquarius {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-pisces {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-pisces {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-pisces {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-pisces {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-aries {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-aries {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-aries {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-aries {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-taurus {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-taurus {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-taurus {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-taurus {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-gemini {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-gemini {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-gemini {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-gemini {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-cancer {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-cancer {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-cancer {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-cancer {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-leo {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-leo {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-leo {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-leo {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-virgo {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-virgo {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-virgo {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-virgo {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-libra {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-libra {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-libra {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-libra {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-scorpio {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-scorpio {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-scorpio {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-scorpio {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-sagittarius {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-sagittarius {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-sagittarius {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-sagittarius {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
+
+
+.sign-image-capricorn {
+    width: 100%;
+    text-align: center;
+}
+.sign-name-capricorn {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-capricorn {
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+    padding: 10px
+}
+.person-bio-capricorn {
+    font-family: tomkin-regular, sans-serif;
+    font-size: 1rem;
+	padding: 10px;
+}
