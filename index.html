@@ -19,7 +19,7 @@
             <div class="zodiac-heist-sub-title">
                 <h2>See which Money Heist character shares same Zodiac sign with you</h2>
             </div>
-            <section id="dob">
+            <!-- <section id="dob">
                 <div class="dob-text">
                     <h3>Enter Date of Heist</h3>
                 </div>
@@ -32,79 +32,32 @@
                         UnMask your character
                     </button>
                 </div>
-            </section>
+            </section> -->
+            <form id="dob">
+                <div class="dob-text">
+                    <h3>
+                        Enter Date of Heist
+                    </h3>
+                </div>
+                <div class="dob-details">
+                    <div class="dob-month-day">
+                        <label for = "input-month">Month:</label>
+                        <input class="input-month" type="number" id="month" min="1" max="12" required>
+                        <label for = "input-day">Day:</label>
+                        <input class="input-day" type="number" id="day" min="1" max="31" required>
+                    </div>
+                    <br>
+                    <button class="submit-button">
+                        UnMask your character
+                    </button>
+                </div>
+            </form>
             <div class="modals">
-                <div id="aquarius-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-aquarius"><span id="output"></span></h1>
-                    <img class="sign-image-aquarius" src="graphics/aquarius-monica-gaztambide.jpg" alt="picture of Esther Acebo">
-                    <h2 class="name-of-person-aquarius"></h2>
-                    <p class="person-bio-aquarius"></p>
-                </div>
-                <div id="pisces-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-pisces"><span id="output"></span></h1>
-                    <img class="sign-image-pisces" src="graphics/pisces-marsella.jpg" alt="picture of Luka Peroš">
-                    <h2 class="name-of-person-pisces"></h2>
-                    <p class="person-bio-pisces"></p>
-                </div>
-                <div id="aries-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-aries"><span id="output"></span></h1>
-                    <img class="sign-image-aries" src="graphics/aries-berlin.jpg" alt="picture of Pedro Alonso">
-                    <h2 class="name-of-person-aries"></h2>
-                    <p class="person-bio-aries"></p>
-                </div>
-                <div id="taurus-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-taurus"><span id="output"></span></h1>
-                    <img class="sign-image-taurus" src="graphics/taurus-raquel-murillo.jpg" alt="picture of Itziar Ituño">
-                    <h2 class="name-of-person-taurus"></h2>
-                    <p class="person-bio-taurus"></p>
-                </div>
-                <div id="gemini-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-gemini"><span id="output"></span></h1>
-                    <img class="sign-image-gemini" src="graphics/gemini-rio.jpg" alt="picture of Miguel Herrán">
-                    <h2 class="name-of-person-gemini"></h2>
-                    <p class="person-bio-gemini"></p>
-                </div>
-                <div id="cancer-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-cancer"><span id="output"></span></h1>
-                    <img class="sign-image-cancer" src="graphics/cancer-nairobi.jpg" alt="picture of Alba Flores">
-                    <h2 class="name-of-person-cancer"></h2>
-                    <p class="person-bio-cancer"></p>
-                </div>
-                <div id="leo-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-leo"><span id="output"></span></h1>
-                    <img class="sign-image-leo" src="graphics/leo-martin-berrote.jpg" alt="picture of Rodrigo de la Serna">
-                    <h2 class="name-of-person-leo"></h2>
-                    <p class="person-bio-leo"></p>
-                </div>
-                <div id="virgo-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-virgo"><span id="output"></span></h1>
-                    <img class="sign-image-virgo" src="graphics/virgo-the-professor.jpg" alt="picture of Álvaro Morte">
-                    <h2 class="name-of-person-virgo"></h2>
-                    <p class="person-bio-virgo"></p>
-                </div>
-                <div id="libra-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-libra"><span id="output"></span></h1>
-                    <img class="sign-image-libra" src="graphics/libra-tokyo.jpg" alt="picture of Úrsula Corberó">
-                    <h2 class="name-of-person-libra"></h2>
-                    <p class="person-bio-libra"></p>
-                </div>
-                <div id="scorpio-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-scorpio"><span id="output"></span></h1>
-                    <img class="sign-image-scorpio" src="graphics/scorpio-denver.jpg" alt="picture of Jaime Lorente">
-                    <h2 class="name-of-person-scorpio"></h2>
-                    <p class="person-bio-scorpio"></p>
-                </div>
-                <div id="sagittarius-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-sagittarius"><span id="output"></span></h1>
-                    <img class="sign-image-sagittarius" src="graphics/sagittarius-bogota.jpg" alt="picture of Hovik Keuchkerian">
-                    <h2 class="name-of-person-sagittarius"></h2>
-                    <p class="person-bio-sagittarius"></p>
-                </div>
-                <div id="capricorn-sub-box" class="zodiac-sub-box">
-                    <h1 class="sign-name-capricorn"><span id="output"></span></h1>
-                    <img class="sign-image-capricorn" src="graphics/capricorn-helsinki.jpg" alt="picture of Darko Perić">
-                    <h2 class="name-of-person-capricorn"></h2>
-                    <p class="person-bio-capricorn"></p>
+                <div class="zodiac-sub-box js-character-reveal">
+                    <h1 class="sign-name-aquarius js-sign-name"><span class="output"></span></h1>
+                    <img class="sign-image-aquarius js-character-img" src="graphics/aquarius-monica-gaztambide.jpg" alt="picture of Esther Acebo">
+                    <h2 class="name-of-person-aquarius js-character-name-person"></h2>
+                    <p class="person-bio-aquarius js-character-bio"></p>
                 </div>
             </div>
             <section id="main-container">
@@ -170,92 +123,6 @@
                 </div>
             </section>
         </div>
-        <!-- <div class="modals">
-            <div id="aquarius-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Aquarius</h1>
-                <img class="sign-image" src="graphics/aquarius-monica-gaztambide.jpg" alt="picture of Esther Acebo">
-                <h2 class="name-of-person">Esther Acebo · Monica Gaztambide</h2>
-                <p class="person-bio">You Match with Esther Acebo AKA Monica Gaztambide from Money Hesit</p> -->
-                <!-- <p class="person-bio">Aquarius is the sign different from the rest of the zodiac and people born with their Sun in it feel special. This makes them eccentric and energetic in their fight for freedom, or at times shy and quiet, afraid to express their true personality. In both cases they are deep thinkers and highly intellectual people who love to fight for idealistic causes. They are able to see people without prejudice and this makes them truly special. Although they can easily adapt to the energy that surrounds them, Aquarius representatives have a deep need to have some time alone and away from everything in order to restore power.</p> -->
-            <!-- </div>
-            <div id="pisces-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Pisces</h1>
-                <img class="sign-image" src="graphics/pisces-marsella.jpg" alt="picture of Luka Peroš">
-                <h2 class="name-of-person">Luka Peroš · Marsella</h2>
-                <p class="person-bio">You Match with Luka Peroš AKA Marsella from Money Hesit</p> -->
-                <!-- <p class="person-bio">Pisces are very friendly and often find themselves in company of very different people. They are selfless and always willing to help others, a very fine intent for as long as they don't expect anything much in return. People born with their Sun in Pisces have an intuitive understanding of the life cycle and form incredible emotional relationship with other humans on the basis of natural order and senses guiding them. They are characterized by empathy and incredible emotional capacity, but only if they keep their boundaries strong and don't let outer emotions overwhelm them.</p> -->
-            <!-- </div>
-            <div id="aries-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Aries</h1>
-                <img class="sign-image" src="graphics/aries-berlin.jpg" alt="picture of Pedro Alonso">
-                <h2 class="name-of-person">Pedro Alonso · Berlin</h2>
-                <p class="person-bio">You Match with Pedro Alonso AKA Berlin from Money Hesit</p> -->
-                <!-- <p class="person-bio">Aries rules the head and leads with the head, often literally walking head first, leaning forwards for speed and focus. Its representatives are naturally brave and rarely afraid of trial and risk. They possess youthful strength and energy, regardless of their age and quickly perform any given tasks. The Sun in such high dignity gives them excellent organizational skills, so you'll rarely meet an Aries who isn't capable of finishing several things at once, often before lunch break! Their challenges show when they get impatient, aggressive and vent anger pointing it to other people. Strong personalities born under this sign have a task to fight for their goals, embracing togetherness and teamwork through this incarnation</p> -->
-            <!-- </div>
-            <div id="taurus-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Taurus</h1>
-                <img class="sign-image" src="graphics/taurus-raquel-murillo.jpg" alt="picture of Itziar Ituño">
-                <h2 class="name-of-person">Itziar Ituño · Raquel Murillo</h2>
-                <p class="person-bio">You Match with Itziar Ituño AKA Raquel Murillo from Money Hesit</p> -->
-                <!-- <p class="person-bio">Practical and well-grounded, Taurus is the sign that harvests the fruits of labor. They feel the need to always be surrounded by love and beauty, turned to the material world, hedonism, and physical pleasures. People born with their Sun in Taurus are sensual and tactile, considering touch and taste the most important of all senses. Stable and conservative, this is one of the most reliable signs of the zodiac, ready to endure and stick to their choices until they reach the point of personal satisfaction. They are loyal and don't like sudden changes, criticism or the chase of guilt people are often prone to, being somewhat dependable on other people and emotions they seem to be unable to let go of.</p> -->
-            <!-- </div>
-            <div id="gemini-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Gemini</h1>
-                <img class="sign-image" src="graphics/gemini-rio.jpg" alt="picture of Miguel Herrán">
-                <h2 class="name-of-person">Miguel Herrán · Rio</h2>
-                <p class="person-bio">You Match with Miguel Herrán AKA Rio from Money Hesit</p> -->
-                <!-- <p class="person-bio">Expressive and quick-witted, Gemini represents two different personalities in one and you will never be sure which one you will face. They are sociable, communicative and ready for fun, with a tendency to suddenly get serious, thoughtful and restless. They are fascinated with the world itself, extremely curious, with a constant feeling that there is not enough time to experience everything they want to see. Gemini's changeable and open mind makes them excellent artists, especially writers and journalists, and their skills and flexibility make them shine in trade, driving and team sports. This is a versatile, inquisitive, fun loving sign, born with a wish to experience everything there is out there, in the world. This makes their character inspiring, and never boring.</p> -->
-            <!-- </div>
-            <div id="cancer-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Cancer</h1>
-                <img class="sign-image" src="graphics/cancer-nairobi.jpg" alt="picture of Alba Flores">
-                <h2 class="name-of-person">Alba Flores · Nairobi</h2>
-                <p class="person-bio">You Match with Alba Flores AKA Nairobi from Money Hesit</p> -->
-                <!-- <p class="person-bio">Deeply intuitive and sentimental, Cancer can be one of the most challenging zodiac signs to get to know. They are very emotional and sensitive, and care deeply about matters of the family and their home. Cancer is sympathetic and attached to people they keep close. Those born with their Sun in Cancer are very loyal and able to empathize with other people's pain and suffering. Guided by emotion and their heart, they could have a hard time blending into the world around them. Being ruled by the Moon, phases of the lunar cycle deepen their internal mysteries and create fleeting emotional patterns that are beyond their control.</p> -->
-            <!-- </div>
-            <div id="leo-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Leo</h1>
-                <img class="sign-image" src="graphics/leo-martin-berrote.jpg" alt="picture of Rodrigo de la Serna">
-                <h2 class="name-of-person">Rodrigo de la Serna · Martin Berrote</h2>
-                <p class="person-bio">You Match with Rodrigo de la Serna AKA Martin Berrote from Money Hesit</p> -->
-                <!-- <p class="person-bio">People born under the sign of Leo are natural born leaders. They are dramatic, creative, self-confident, dominant and extremely difficult to resist, able to achieve anything they want to in any area of life they commit to. There is a specific strength to a Leo and their "king of the jungle" status. Leo often has many friends for they are generous and loyal. Self-confident and attractive, this is a Sun sign capable of uniting different groups of people and leading them as one towards a shared cause, and their healthy sense of humor makes collaboration with other people even easier.</p> -->
-            <!-- </div>
-            <div id="virgo-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Virgo</h1>
-                <img class="sign-image" src="graphics/virgo-the-professor.jpg" alt="picture of Álvaro Morte">
-                <h2 class="name-of-person">Álvaro Morte · The Professor</h2>
-                <p class="person-bio">You Match with Álvaro Morte AKA The Professor from Money Hesit</p> -->
-                <!-- <p class="person-bio">Virgos are always paying attention to the smallest details and their deep sense of humanity makes them one of the most careful signs of the zodiac. Their methodical approach to life ensures that nothing is left to chance, and although they are often tender, their heart might be closed for the outer world. This is a sign often misunderstood, not because they lack the ability to express, but because they won't accept their feelings as valid, true, or even relevant when opposed to reason. The symbolism behind the name speaks well of their nature, born with a feeling they are experiencing everything for the first time. These individuals have an organized life, and even when they let go to chaos, their goals and dreams still have strictly defined borders in their mind.</p> -->
-            <!-- </div>
-            <div id="libra-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Libra</h1>
-                <img class="sign-image" src="graphics/libra-tokyo.jpg" alt="picture of Úrsula Corberó">
-                <h2 class="name-of-person">Úrsula Corberó · Tokyo</h2>
-                <p class="person-bio">You Match with Úrsula Corberó AKA Tokyo from Money Hesit</p> -->
-                <!-- <p class="person-bio">People born under the sign of Libra are peaceful, fair, and they hate being alone. Partnership is very important for them, seeking someone with the ability to be the mirror to themselves. These individuals are fascinated by balance and symmetry, they are in a constant chase for justice and equality, realizing through life that the only thing that should be truly important to themselves in their own inner core of personality. This is someone ready to do nearly anything to avoid conflict, keeping the peace whenever possible. Planet ruling the sign of Libra is Venus, making these people great lovers but also fond of expensive, material things. Their lives need to be enriched by music, art, and beautiful places they get a chance to visit.</p> -->
-            <!-- </div>
-            <div id="scorpio-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Scorpio</h1>
-                <img class="sign-image" src="graphics/scorpio-denver.jpg" alt="picture of Jaime Lorente">
-                <h2 class="name-of-person">Jaime Lorente · Denver</h2>
-                <p class="person-bio">You Match with Jaime Lorente AKA Denver from Money Hesit</p> -->
-                <!-- <p class="person-bio">Scorpios are passionate and assertive people with determination and focus you rarely see in other zodiac signs. They will turn to in-depth research to reach the truth behind anything they find important. Great leaders and guides, Scorpios are resourceful, dedicated and fearless when there is challenge to be overcome. They will hold on to other people's secrets, even when they aren't very fond of them to begin with and do anything they can for those they tie themselves to.These individuals are known for being calm and cool, looking mysterious and hard to figure out. There is a deep understanding of the rules of the Universe inside every Scorpio that gives them the power others rush through life rarely recognizing within.</p> -->
-            <!-- </div>
-            <div id="sagittarius-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Sagittarius</h1>
-                <img class="sign-image" src="graphics/sagittarius-bogota.jpg" alt="picture of Hovik Keuchkerian">
-                <h2 class="name-of-person">Hovik Keuchkerian · Bogota</h2>
-                <p class="person-bio">You Match with Hovik Keuchkerian AKA Bogota from Money Hesit</p> -->
-                <!-- <p class="person-bio">Curious and energetic, Sagittarius are the travelers of the zodiac. Their open mind and philosophical view motivate them to wander around the world in search of the meaning of life. Sagittarius is an extrovert, always optimistic, full of enthusiasm, and ready for changes. This is a Sun sign of individuals who are often preoccupied with mental work, but when they find grounding, they show their ability to transform visions and thoughts into concrete actions and circumstances. Their enthusiasm has no boundaries, and these people possess a great sense of humor accompanied by intense curiosity. In need of absolute freedom, their adventurous spirit takes them from one end of the world to the other, exploring different cultures and philosophies.</p> -->
-            <!-- </div>
-            <div id="capricorn-sub-box" class="zodiac-sub-box">
-                <h1 class="sign-name">Capricorn</h1>
-                <img class="sign-image" src="graphics/capricorn-helsinki.jpg" alt="picture of Darko Perić">
-                <h2 class="name-of-person">Darko Perić · Helsinki</h2>
-                <p class="person-bio">You Match with Darko Perić AKA Helsinki from Money Hesit</p> -->
-                <!-- <p class="person-bio">Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature. These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives. They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time. They will learn from their mistakes and get to the top based solely on their experience and expertise. Always ready to transform into something that scares those scary things off, Capricorn speaks of each natural chain reaction of fear, where one scary thing leads to many others, rising up as defensive mechanisms that only make things worse.</p> -->
-            <!-- </div>
-        </div> -->
     </div>
     <script src="main.js"></script>
 </body>
