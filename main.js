@@ -25,7 +25,7 @@ function zodiac(){
       img = "graphics/aquarius-monica-gaztambide.jpg";
       charName = "Esther Acebo · Monica Gaztambide";
       bio = "You Match with Esther Acebo AKA Monica Gaztambide from Money Hesit";
-      var audio = new Audio ('assets/sound1.mp3');
+      var audio = new Audio ('assets/1-aquarius-sound.mp3');
       audio.play();
 
       }
@@ -37,7 +37,7 @@ function zodiac(){
       img="graphics/pisces-marsella.jpg";
       charName="Luka Peroš · Marsella";
       bio ="You Match with Luka Peroš AKA Marsella from Money Hesit";
-      var audio = new Audio ('assets/sound2.mp3');
+      var audio = new Audio ('assets/2-pisces-sound.mp3');
       audio.play();
         
       }
@@ -48,7 +48,7 @@ function zodiac(){
       img="graphics/aries-berlin.jpg";
       charName="Pedro Alonso · Berlin";
       bio ="You Match with Pedro Alonso AKA Berlin from Money Hesit";
-      var audio = new Audio ('assets/sound3.mp3');
+      var audio = new Audio ('assets/3-aries-sound.mp3');
       audio.play();
       
     }
@@ -60,7 +60,7 @@ function zodiac(){
       img="graphics/taurus-raquel-murillo.jpg";
       charName="Itziar Ituño · Raquel Murillo";    
       bio ="You Match with Itziar Ituño AKA Raquel Murillo from Money Hesit";
-      var audio = new Audio ('assets/sound4.mp3');
+      var audio = new Audio ('assets/4-taurus-sound.mp3');
       audio.play();
 
       }
@@ -72,7 +72,7 @@ function zodiac(){
       img="graphics/gemini-rio.jpg";
       charName="Miguel Herrán · Rio";
       bio ="You Match with Miguel Herrán AKA Rio from Money Hesit";
-      var audio = new Audio ('assets/sound5.mp3');
+      var audio = new Audio ('assets/5-gemini-sound.mp3');
       audio.play();
 
       }
@@ -84,7 +84,7 @@ function zodiac(){
       img="graphics/cancer-nairobi.jpg";
       charName="Alba Flores · Nairobi";
       bio ="You Match with Alba Flores AKA Nairobi from Money Hesit";
-      var audio = new Audio ('assets/sound6.mp3');
+      var audio = new Audio ('assets/6-cancer-sound.mp3');
       audio.play();
 
       }
@@ -95,7 +95,7 @@ function zodiac(){
       img="graphics/leo-martin-berrote.jpg";
       charName="Rodrigo de la Serna · Martin Berrote";
       bio ="You Match with Rodrigo de la Serna AKA Martin Berrote from Money Hesit";
-      var audio = new Audio ('assets/sound7.mp3');
+      var audio = new Audio ('assets/7-leo-sound.mp3');
       audio.play();
 
       }
@@ -106,7 +106,7 @@ function zodiac(){
         img="graphics/virgo-the-professor.jpg";
         charName="Álvaro Morte · The Professor";
         bio ="You Match with Álvaro Morte AKA The Professor from Money Hesit";
-        var audio = new Audio ('assets/sound8.mp3');
+        var audio = new Audio ('assets/8-virgo-sound.mp3');
         audio.play();
         
         }
@@ -117,7 +117,7 @@ function zodiac(){
         img="graphics/libra-tokyo.jpg";
         charName="Úrsula Corberó · Tokyo";
         bio ="You Match with Úrsula Corberó AKA Tokyo from Money Hesit";
-        var audio = new Audio ('assets/sound9.mp3');
+        var audio = new Audio ('assets/9-libra-sound.mp3');
         audio.play();
 
       }
@@ -128,7 +128,7 @@ function zodiac(){
         img="graphics/scorpio-denver.jpg";
         charName="Jaime Lorente · Denver";
         bio ="You Match with Jaime Lorente AKA Denver from Money Hesit";
-        var audio = new Audio ('assets/sound10.mp3');
+        var audio = new Audio ('assets/10-scorpio-sound.mp3');
         audio.play();
         
       }
@@ -139,7 +139,7 @@ function zodiac(){
         img="graphics/sagittarius-bogota.jpg";
         charName="Hovik Keuchkerian · Bogota";
         bio ="You Match with Hovik Keuchkerian AKA Bogota from Money Hesit";
-        var audio = new Audio ('assets/sound11.mp3');
+        var audio = new Audio ('assets/11-sagittarius-sound.mp3');
         audio.play();
         
         }
@@ -151,7 +151,7 @@ function zodiac(){
         img="graphics/capricorn-helsinki.jpg";
         charName="Darko Perić · Helsinki";
         bio ="You Match with Darko Perić AKA Helsinki from Money Hesit";
-        var audio = new Audio ('assets/sound12.mp3');
+        var audio = new Audio ('assets/12-capricorn-sound.mp3');
         audio.play();
         
       }
