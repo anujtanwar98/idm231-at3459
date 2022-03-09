@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    background-color: antiquewhite;
+}
+
+.js-wrapper {
+    display: none;
+}
+.button-style{
+    color: black;
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.button-style:hover{
+    color: black;
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+
+.main-wrapper {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+.date-box {
+    padding: 10px;
+}
+.enter-birth {
+    font-size: 1rem;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.what-text{
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+}
+.birthday-text {
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+}
+.season-text{
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+}
