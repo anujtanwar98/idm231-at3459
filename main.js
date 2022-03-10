@@ -4,6 +4,23 @@ let charName = "";
 let bio = "";
 let helping = "";
 
+//  images as button 
+
+const maskAquarius = document.querySelector('.aquarius-button');
+const maskpisces = document.querySelector('.pisces-button');
+const maskAries = document.querySelector('.aries-button');
+const maskTaurus = document.querySelector('.taurus-button');
+const maskAGemini = document.querySelector('.gemini-button');
+const maskCancer = document.querySelector('.cancer-button');
+const maskLeo = document.querySelector('.leo-button');
+const maskVirgo = document.querySelector('.virgo-button');
+const maskLibra = document.querySelector('.libra-button');
+const maskScorpio = document.querySelector('.scorpio-button');
+const maskSagittarius = document.querySelector('.sagittarius-button');
+const maskCapricorn = document.querySelector('.capricorn-button');
+
+// end of images as button 
+
 // function to figure out the zodiac character
 function zodiac(){
     // changed these to const bc they're not gonna change
@@ -156,7 +173,7 @@ function zodiac(){
         
       }
         else if (birthmonth>12||birthday>31){
-          alert("Please enter an accurate date !!!");
+          return alert("Please enter an accurate date !!!")
   
 
       }
@@ -227,3 +244,125 @@ helpOpenButton.addEventListener('click', showHelpBox);
 //  event listener for help close button
 const helpCloseButton = document.querySelector('.js-help-button-close');
 helpCloseButton.addEventListener('click', showHelpBox);
+
+// event listener for images button
+maskAquarius.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign = "Aquarius";
+  img = "graphics/aquarius-monica-gaztambide.jpg";
+  charName = "Esther Acebo · Monica Gaztambide";
+  bio = "You Match with Esther Acebo AKA Monica Gaztambide from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/1-aquarius-sound.mp3');
+  audio.play();
+});
+maskpisces.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Pisces";
+  img="graphics/pisces-marsella.jpg";
+  charName="Luka Peroš · Marsella";
+  bio ="You Match with Luka Peroš AKA Marsella from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/2-pisces-sound.mp3');
+  audio.play();  
+});
+maskAries.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Aries";
+  img="graphics/aries-berlin.jpg";
+  charName="Pedro Alonso · Berlin";
+  bio ="You Match with Pedro Alonso AKA Berlin from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/3-aries-sound.mp3');
+  audio.play();
+});
+maskTaurus.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Taurus";
+  img="graphics/taurus-raquel-murillo.jpg";
+  charName="Itziar Ituño · Raquel Murillo";    
+  bio ="You Match with Itziar Ituño AKA Raquel Murillo from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/4-taurus-sound.mp3');
+  audio.play();  
+});
+maskAGemini.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Gemini";
+  img="graphics/gemini-rio.jpg";
+  charName="Miguel Herrán · Rio";
+  bio ="You Match with Miguel Herrán AKA Rio from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/5-gemini-sound.mp3');
+  audio.play();  
+});
+maskCancer.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Cancer";
+  img="graphics/cancer-nairobi.jpg";
+  charName="Alba Flores · Nairobi";
+  bio ="You Match with Alba Flores AKA Nairobi from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/6-cancer-sound.mp3');
+  audio.play();  
+});
+maskLeo.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Leo";
+  img="graphics/leo-martin-berrote.jpg";
+  charName="Rodrigo de la Serna · Martin Berrote";
+  bio ="You Match with Rodrigo de la Serna AKA Martin Berrote from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/7-leo-sound.mp3');
+  audio.play();  
+});
+maskVirgo.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Virgo";
+  img="graphics/virgo-the-professor.jpg";
+  charName="Álvaro Morte · The Professor";
+  bio ="You Match with Álvaro Morte AKA The Professor from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/8-virgo-sound.mp3');
+  audio.play();  
+});
+maskLibra.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Libra";
+  img="graphics/libra-tokyo.jpg";
+  charName="Úrsula Corberó · Tokyo";
+  bio ="You Match with Úrsula Corberó AKA Tokyo from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/9-libra-sound.mp3');
+  audio.play();  
+});
+maskScorpio.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Scorpio";
+  img="graphics/scorpio-denver.jpg";
+  charName="Jaime Lorente · Denver";
+  bio ="You Match with Jaime Lorente AKA Denver from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/10-scorpio-sound.mp3');
+  audio.play();  
+});
+maskSagittarius.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Sagittarius";
+  img="graphics/sagittarius-bogota.jpg";
+  charName="Hovik Keuchkerian · Bogota";
+  bio ="You Match with Hovik Keuchkerian AKA Bogota from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/11-sagittarius-sound.mp3');
+  audio.play();  
+});
+maskCapricorn.addEventListener('click', function(){
+  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  sign="Capricorn";
+  img="graphics/capricorn-helsinki.jpg";
+  charName="Darko Perić · Helsinki";
+  bio ="You Match with Darko Perić AKA Helsinki from Money Hesit";
+  setCharacter();
+  var audio = new Audio ('assets/12-capricorn-sound.mp3');
+  audio.play();
+});
